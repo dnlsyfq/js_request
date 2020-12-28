@@ -73,3 +73,20 @@ xhr.send(data);
 ```
 xhr.setRequestHeader('Content-type', 'application/json');
 ```
+
+## Request with ES6
+
+A promise is an object that handles asynchronous data. A promise has three states:
+
+* pending : when a promise is created or waiting for data.
+* fulfilled : the asynchronous operation was handled successfully.
+* rejected : the asynchronous operation was unsuccessful.
+ 
+The great thing about promises is that once a promise is fulfilled or rejected, you can chain an additional method to the original promise.
+
+### fetch()
+
+* Creates a request object that contains relevant information that an API needs.
+* Sends that request object to the API endpoint provided.
+* Returns a promise that ultimately resolves to a response object, which contains the status of the promise with information the API sent back.
+
